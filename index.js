@@ -47,16 +47,16 @@ app.get('/about',(req,res)=>{
 
 
 // Doug array 
-// app.get('/:indexOfDougsArray', (req, res) => {
-//     res.send(dougItems[req.params.indexOfDougsArray]);
-// });
+app.get('/:indexOfDougsArray', (req, res) => {
+    res.send(dougItems[req.params.indexOfDougsArray]);
+});
 
 
-app.get('/howdy/:firstName', function(req, res) {
-    console.log(req.params);
-    console.log(req.query);
-    res.send('hello ' + req.query.title + ' ' + req.params.firstName);
-  });
+// app.get('/howdy/:firstName', function(req, res) {
+//     console.log(req.params);
+//     console.log(req.query);
+//     res.send('hello ' + req.query.title + ' ' + req.params.firstName);
+//   });
 
 
 
